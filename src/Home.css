@@ -1,0 +1,52 @@
+* {
+  box-sizing: border-box;
+}
+
+.home-div {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+h1 {
+  width: 100%;
+  flex-basis: 100%;
+  text-align: center;
+  justify-self: center;
+  padding-top: 30px;
+  height: 15vh;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.NoteList {
+  justify-items: center;
+  flex-grow: 3;
+}
+
+.FolderList {
+  flex-grow: 1;
+}
+
+
+.FolderItem {
+  border: 1px solid black;
+  text-align: center;
+}
+
+.NoteItem {
+  border: 1px solid black;
+  margin: 10px;
+  padding-left: 10px;
+}
+
+.NoteItem > button {
+  margin-bottom: 10px;
+}
+
+button:hover {
+  cursor: pointer;
+}
+

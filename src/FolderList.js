@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+
 import Folder from './Folder'
 
 class FolderList extends Component {
@@ -6,7 +7,7 @@ class FolderList extends Component {
     const { folders } = this.props
     return(
       <section className='FolderList'>
-        <ul className='BookmarkList__list' aria-live='polite'>
+        <ul className='FolderList__list' aria-live='polite'>
           {folders.map(folder =>
             <Folder
               key={folder.id}
